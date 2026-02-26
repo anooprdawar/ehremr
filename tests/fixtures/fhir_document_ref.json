@@ -1,0 +1,32 @@
+{
+  "resourceType": "DocumentReference",
+  "status": "current",
+  "docStatus": "final",
+  "type": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "11506-3",
+        "display": "Progress note"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/patient-001"
+  },
+  "content": [
+    {
+      "attachment": {
+        "contentType": "text/plain",
+        "title": "Clinical Transcription"
+      }
+    }
+  ],
+  "context": {
+    "encounter": [
+      {
+        "reference": "Encounter/encounter-001"
+      }
+    ]
+  }
+}

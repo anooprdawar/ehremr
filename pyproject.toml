@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ehr-integration"
+version = "0.1.0"
+description = "Deepgram Nova-3 Medical speech-to-text integration for EHR/EMR systems"
+requires-python = ">=3.10"
+dependencies = [
+    "deepgram-sdk>=3.7",
+    "fhir.resources>=7.1",
+    "hl7>=0.4.0",
+    "requests>=2.31",
+    "pydantic>=2.0",
+    "python-dotenv>=1.0",
+    "PyJWT>=2.8",
+    "cryptography>=41.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "pytest-asyncio>=0.23",
+    "requests-mock>=1.12",
+    "pytest-cov>=5.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+addopts = "--tb=short"
+markers = [
+    "unit: fast offline unit tests",
+    "integration: mock-based integration tests",
+    "quality: schema, deep-validation, and property-based tests",
+    "live: requires real credentials — skipped unless env vars are set",
+]
+
+[tool.coverage.run]
+source = ["src"]
+omit = ["*/tests/*"]

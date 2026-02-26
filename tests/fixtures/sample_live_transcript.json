@@ -1,0 +1,26 @@
+{
+  "type": "Results",
+  "channel_index": [0, 1],
+  "duration": 3.5,
+  "start": 0.5,
+  "is_final": true,
+  "speech_final": true,
+  "channel": {
+    "alternatives": [
+      {
+        "transcript": "Patient presents with chest pain.",
+        "confidence": 0.99,
+        "words": [
+          {"word": "Patient", "start": 0.5, "end": 0.9, "confidence": 0.99, "speaker": 0, "punctuated_word": "Patient"},
+          {"word": "presents", "start": 1.0, "end": 1.5, "confidence": 0.98, "speaker": 0, "punctuated_word": "presents"},
+          {"word": "with", "start": 1.6, "end": 1.8, "confidence": 0.99, "speaker": 0, "punctuated_word": "with"},
+          {"word": "chest", "start": 1.9, "end": 2.3, "confidence": 0.97, "speaker": 0, "punctuated_word": "chest"},
+          {"word": "pain.", "start": 2.4, "end": 3.0, "confidence": 0.98, "speaker": 0, "punctuated_word": "pain."}
+        ]
+      }
+    ]
+  },
+  "metadata": {
+    "request_id": "live-abc123"
+  }
+}

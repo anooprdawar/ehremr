@@ -1,0 +1,8 @@
+deepgram-sdk>=3.7
+fhir.resources>=7.1
+hl7>=0.4.0
+requests>=2.31
+pydantic>=2.0
+python-dotenv>=1.0
+PyJWT>=2.8
+cryptography>=41.0
